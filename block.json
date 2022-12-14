@@ -1,0 +1,22 @@
+{
+	"$schema": "https://json.schemastore.org/block.json",
+	"apiVersion": 2,
+	"name": "example-blocks/pros-cons",
+	"title": "Pros / Cons",
+	"icon": "index-card",
+	"category": "layout",
+	"attributes": {
+		"pros": {
+			"type": "string",
+			"source": "html",
+			"selector": ".pros"
+		},
+		"cons": {
+			"type": "string",
+			"source": "html",
+			"selector": ".cons"
+		}
+	},
+	"editorScript": "file:./block.js",
+	"style": "file:./style.css"
+}

@@ -1,0 +1,48 @@
+/* truck */
+.wp-block-example-blocks-pros-cons .row{
+  display: flex;
+  flex-wrap: wrap;
+}
+.wp-block-example-blocks-pros-cons .row>* {
+  flex-shrink: 0;
+  width: 100%;
+  max-width: 100%;
+}
+@media (min-width: 768px){
+  .wp-block-example-blocks-pros-cons .offset-md-1 {
+    margin-left: 8.33333333%;
+  }
+  .wp-block-example-blocks-pros-cons .offset-md-2 {
+    margin-left: 16.66666667%;
+  }
+  .wp-block-example-blocks-pros-cons .col-md-4 {
+    flex: 0 0 auto;
+    width: 33.33333333%;
+  }
+}
+.wp-block-example-blocks-pros-cons .pros-cons{
+  background-color: #ff7f00;
+  color: white;
+  width: 100%;
+  padding-top: 100%;
+  position: relative;
+  border-radius: 50%;
+}
+.wp-block-example-blocks-pros-cons .cons{
+  background-color: #0a376c;
+}
+.wp-block-example-blocks-pros-cons .pros-cons-text {
+  position: absolute;
+  top: 0;
+  left: 0;
+  bottom: 0;
+  right: 0;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-flow: column;
+}
+.wp-block-example-blocks-pros-cons .pros-cons-text h3{
+	text-align: center;
+	font-weight: 700;
+}
